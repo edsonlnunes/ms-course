@@ -19,6 +19,6 @@ public class Worker {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID uid;
     private String name;
-    @Column(name = "daily_in_come")
-    private double dailyInCome;
+    @Column(name = "daily_income")
+    private double dailyIncome;
 }

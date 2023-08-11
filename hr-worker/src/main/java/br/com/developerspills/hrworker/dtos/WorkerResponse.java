@@ -7,9 +7,9 @@ import java.util.UUID;
 public record WorkerResponse(
         UUID uid,
         String name,
-        double dailyInCome
+        double dailyIncome
 ) {
     public WorkerResponse(Worker worker){
-        this(worker.getUid(), worker.getName(), worker.getDailyInCome());
+        this(worker.getUid(), worker.getName(), worker.getDailyIncome());
     }
 }
