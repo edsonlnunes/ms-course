@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.UUID;
 
 @Component
-@FeignClient(name = "hr-worker", url = "localhost:8081", path = "/api/workers")
+@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/api/workers")
 public interface WorkerFeignClient {
     @GetMapping("{uid}")
     ResponseEntity<Worker> loadWorker(@PathVariable UUID uid);
